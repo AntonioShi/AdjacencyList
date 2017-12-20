@@ -119,12 +119,6 @@ void AdjDestroy(AdjLGraph* G) {
 }
 
 
-//创建图
-typedef struct {
-    int row ;
-    int col ;
-}RowCol;
-
 void CreateGraph(AdjLGraph *G, DataType v[], int n, RowCol d[], int e){
     AdjInitiate(G) ;
     for (int i = 0; i < n; ++i) {

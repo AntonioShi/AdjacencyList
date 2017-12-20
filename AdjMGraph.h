@@ -26,6 +26,13 @@ typedef struct {
     int numOfEdges;			/*边个数*/
 } AdjLGraph;				/*图的邻接表结构体*/
 
+//创建图
+typedef struct {
+    int row ;
+    int col ;
+}RowCol;
+
+
 void AdjInitiate(AdjLGraph * G) ;
 
 void InsertVertex(AdjLGraph * G, int i, DataType vertex) ;
@@ -39,5 +46,7 @@ int GetFirstVex(AdjLGraph G, int v) ;
 int GetNextVex(AdjLGraph G, int v1, int v2) ;
 
 void AdjDestroy(AdjLGraph* G) ;
+
+void CreateGraph(AdjLGraph *G, DataType v[], int n, RowCol d[], int e) ;
 
 #endif //ADJACENCYLIST_ADJMGRAPH_H

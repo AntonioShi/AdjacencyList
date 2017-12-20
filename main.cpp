@@ -9,8 +9,6 @@ int main() {
     AdjLGraph graph ;
     DataType dataType[] = {'A', 'B', 'C', 'D', 'E'};
 
-    int n = 5, e = 5;
-    int i, j;
 
     return 0;
 }
