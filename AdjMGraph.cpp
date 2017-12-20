@@ -119,7 +119,7 @@ void AdjDestroy(AdjLGraph* G) {
 }
 
 
-void CreateGraph(AdjLGraph *G, DataType v[], int n, RowCol d[], int e){
+void CreateGraph(AdjLGraph *G, DataType v[], int n, RowColWeight d[], int e){
     AdjInitiate(G) ;
     for (int i = 0; i < n; ++i) {
         InsertVertex(G, i, v[i]) ;

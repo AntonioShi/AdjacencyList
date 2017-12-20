@@ -30,7 +30,8 @@ typedef struct {
 typedef struct {
     int row ;
     int col ;
-}RowCol;
+    int weight ;
+}RowColWeight;
 
 
 void AdjInitiate(AdjLGraph * G) ;
@@ -47,6 +48,6 @@ int GetNextVex(AdjLGraph G, int v1, int v2) ;
 
 void AdjDestroy(AdjLGraph* G) ;
 
-void CreateGraph(AdjLGraph *G, DataType v[], int n, RowCol d[], int e) ;
+void CreateGraph(AdjLGraph *G, DataType v[], int n, RowColWeight d[], int e) ;
 
 #endif //ADJACENCYLIST_ADJMGRAPH_H
